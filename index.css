@@ -1,0 +1,87 @@
+:root{
+    --font:'Potta One', cursive;
+}
+
+body{
+    display: flex;
+    background-color: #F8DE22;
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+    height: 100vh;  
+    width: 100%;
+    overflow: hidden;
+    font-family: var(--font);
+}
+.hidden {
+    display: none;
+
+}
+.Fname{
+    transition: all 2s ease-in-out;
+}
+input {
+    background-color: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    border-bottom: 3px dashed black;
+    padding-right: 40px;
+    background-image: url('chat-noir.png');
+    background-size: 20px 20px; 
+    background-position: right 10px center; 
+    background-repeat: no-repeat;
+    
+    transition: border-color 0.3s ease-in-out;
+}
+input::placeholder{
+    font-family: var(--font);
+}
+form > div {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+.button-sign-up,.button-login {
+    margin-top: 1rem;
+    background: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px dashed transparent; 
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.button-sign-up:hover,.button-login:hover {
+    border-color: rgb(0, 0, 0);
+}
+.sign-up{
+    transition: transform ease-in-out 0.5s,
+                opacity ease-in 0.3s;
+   
+}
+.animate {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+.login{
+    transform: rotateY(-180deg);
+    opacity: 0;
+    transition: transform ease-in-out 0.5s,
+    opacity ease-in 0.3s;
+    
+}
+.reverse-animate{
+    transform: rotateY(0deg);
+    opacity: 1;
+    perspective: 800px;
+}
+legend {
+    font-size:1.2em;
+    font-weight: 800;
+}
+input:focus {
+    border:0px;
+    outline: none;
+    
+}

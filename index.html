@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+     <form action="https://httpbin.org/post" method="post" dir="ltr" class="sign-up">
+       <legend>Sign-up</legend>
+            <div class="Fname">
+                <!-- label for="name">First Name</label> -->
+                <input type="text" id="name"placeholder="your first name"name="first_name">
+            </div>
+            <div class="Lname">
+               <!--  <label for="last name">Last Name</label> -->
+                <input type="text" id="last name"placeholder="your last name"name="last_name">
+            </div>
+            <div class="email">
+                <!-- <label for="email">Enter email</label> -->
+                <input type="email" required  id="email"placeholder="your email"
+                 name="the_email">
+            </div>
+        
+            <div class="Password">
+                <!-- <label for="Password">Password</label> -->
+                <input type="password" required minlength="6" id="Password"placeholder="your Password"
+                name="the_password" pattern="[a-zA-Z]{5,20}"aria-describedby="password-minlength">
+            </div>
+            <button type="button" class="button-sign-up">Do you have an account?</button>           
+    </form>
+   
+    <form action="https://httpbin.org/post" method="post" dir="ltr" class="login">
+        <legend>Login</legend>
+             <div class="email">
+                 
+                 <input type="email" required  id="email"placeholder="your email"
+                  name="the_email">
+             </div>
+         
+             <div class="Password">
+                 
+                 <input type="password" required minlength="6" id="Password"placeholder="your Password"
+                 name="the_password" pattern="[a-zA-Z]{5,20}"aria-describedby="password-minlength">
+             </div>
+             <button type="button" class="button-login">you are here in the first time?</button>
+            
+     </form>
+     <div class="img"> 
+        <img src="cat-removebg-preview.png" alt="cat-img">
+     </div>
+    <script src="index.js"></script>
+</body>
+</html>
